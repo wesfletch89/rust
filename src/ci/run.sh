@@ -23,7 +23,7 @@ fi
 ci_dir=`cd $(dirname $0) && pwd`
 source "$ci_dir/shared.sh"
 
-if [ "$TRAVIS" == "true" ] && [ "$TRAVIS_BRANCH" != "auto" ]; then
+if [ "$TRAVIS" == "true" ] && [ "$TRAVIS_BRANCH" != "try" ]; then
     RUST_CONFIGURE_ARGS="$RUST_CONFIGURE_ARGS --enable-quiet-tests"
 fi
 

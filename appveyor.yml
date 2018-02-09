@@ -181,7 +181,7 @@ on_failure:
 
 branches:
   only:
-    - auto
+    - try
 
 before_deploy:
   - ps: |
